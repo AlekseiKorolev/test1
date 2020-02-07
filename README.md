@@ -23,7 +23,7 @@ Web API
 | get  | /api/user/policyNumber/:policyNumber | get user data linked to a policy number    | required |
 | get  | /api/policies/:userName              | get list of policies filtered by user name | required |
 
-#### Header for authorization
+#### Authorization header
 
 ```json
 { "user": "userName" }
