@@ -9,10 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
+    "memory-cache": "^0.2.0",
     "node-fetch": "^2.6.0"
   },
   "directories": {
@@ -21,6 +23,9 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "mocha": "^7.0.1"
+    "chai-nock": "^1.2.0",
+    "mocha": "^7.0.1",
+    "nock": "^12.0.0",
+    "request": "^2.88.2"
   }
 }
