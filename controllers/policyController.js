@@ -1,12 +1,13 @@
 const fetch = require("node-fetch");
 const _ = require("lodash");
+const { userURL, policyURL } = require("../config/config");
 
-exports.getPoliciesByName = (req, res) => {
-  return fetch("http://www.mocky.io/v2/5808862710000087232b75ac")
+module.exports.getPoliciesByName = (req, res) => {
+  return fetch(userURL)
     .then(data => data.json())
     .then(data => _.find(data.clients, { name: req.params.userName }))
     .then(client =>
-      fetch("http://www.mocky.io/v2/580891a4100000e8242b75c5")
+      fetch(policyURL)
         .then(data => data.json())
         .then(data => {
           const policies = _.filter(data.policies, { clientId: client.id });

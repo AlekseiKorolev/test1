@@ -9,6 +9,7 @@ Web API
 - express
 - lodash
 - mocha
+- memory-cache
 
 ### API documentation
 
